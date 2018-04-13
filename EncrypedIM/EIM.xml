@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://schemas.microsoft.com/windows/2009/Ribbon">
+  <Application.Commands>
+    <Command Name="cmdFileMenu" Symbol="ID_FILE_MENU" Id="25000" />
+    <Command Name="cmdExit" LabelTitle="退出" TooltipTitle="退出此程序" TooltipDescription="立刻退出" Symbol="IDR_CMD_EXIT">
+      <Command.LargeImages>
+        <Image Id="9999" >res/ExitL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdTabStart">
+      <Command.LabelTitle>
+        <String Id="1000">开始</String>
+      </Command.LabelTitle>
+    </Command>
+    <Command Name="cmdGroupAuth">
+      <Command.LabelTitle>
+        <String Id="1001">凭据</String>
+      </Command.LabelTitle>
+    </Command>
+    <Command Name="cmdGroupLogin">
+      <Command.LabelTitle>
+        <String Id="1002">登录</String>
+      </Command.LabelTitle>
+    </Command>
+    <Command Name="cmdGroupChatList">
+      <Command.LabelTitle>
+        <String Id="1003">聊天</String>
+      </Command.LabelTitle>
+    </Command>
+    <Command Name="cmdGroupSend">
+
+    </Command>
+    <Command Name="cmdDeviceID" LabelTitle="设备ID:" Symbol="IDR_CMD_ID"/>
+    <Command Name="cmdCAPIKEY" LabelTitle="APIKEY:" Symbol="IDR_CMD_APIKEY"/>
+    <Command Name="cmdLogin" LabelTitle="登录&#xD;&#xA;" Symbol="IDR_CMD_LOGIN">
+      <Command.SmallImages>
+        <Image Id="1005" MinDPI="96">res/Open_Small_96.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image Id="1006" MinDPI="96">res/Open_Big_96.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdLogout" LabelTitle="退出&#xD;&#xA;"  Symbol="IDR_CMD_LOGOUT">
+      <Command.SmallImages>
+        <Image Id="1007" MinDPI="96">res/Exit_Small_96.bmp</Image>
+      </Command.SmallImages>
+      <Command.LargeImages>
+        <Image Id="1008" MinDPI="96">res/Exit_Big_96.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdSwitchChat" LabelTitle="聊天列表" TooltipTitle="切换聊天对象" Symbol="IDR_CMD_SWITCH">
+      <Command.LargeImages>
+        <Image Id="1009" MinDPI="96">res/send-letter.png</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdClose" LabelTitle="关闭该聊天"  Symbol="IDR_CMD_CLOSE">
+      <Command.LargeImages>
+        <Image Id="1010" >res/ExitL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdKey" LabelTitle="密码:" Symbol="IDR_CMD_KEY"/>
+    <Command Name="cmdStartNew" LabelTitle="对方ID:" Symbol="IDR_CMD_TARGETID"/>
+    <Command Name="cmdSend" LabelTitle="发送消息"  Symbol="IDR_CMD_SEND">
+      <Command.LargeImages>
+        <Image Id="1011" MinDPI="96">res/send-letter.png</Image>
+      </Command.LargeImages>
+    </Command>
+  </Application.Commands>
+  <Application.Views>
+    <Ribbon>
+      <Ribbon.ApplicationMenu>
+        <ApplicationMenu CommandName="cmdFileMenu">
+          <MenuGroup>
+            <Button CommandName="cmdExit" />
+          </MenuGroup>
+        </ApplicationMenu>
+      </Ribbon.ApplicationMenu>
+      <Ribbon.Tabs>
+        <Tab CommandName="cmdTabStart">
+          <Group CommandName="cmdGroupAuth" >
+            <ComboBox CommandName="cmdDeviceID"/>
+            <ComboBox CommandName="cmdCAPIKEY"/>
+          </Group>
+          <Group CommandName="cmdGroupLogin" SizeDefinition="TwoButtons">
+            <Button CommandName="cmdLogin" />
+            <Button CommandName="cmdLogout" />
+          </Group>
+          <Group CommandName="cmdGroupChatList">
+            <InRibbonGallery CommandName="cmdSwitchChat" Type="Items" ItemHeight="32" ItemWidth="32" TextPosition="Bottom" MaxColumns="6" MaxRows="2" MinColumnsMedium="3"/>
+            <ComboBox CommandName="cmdKey"/>
+            <ComboBox CommandName="cmdStartNew"/>
+          </Group>
+          <Group CommandName="cmdGroupSend" SizeDefinition="TwoButtons">
+            <Button CommandName="cmdSend" />
+            <Button CommandName="cmdClose" />
+          </Group>
+        </Tab>
+      </Ribbon.Tabs>
+    </Ribbon>
+  </Application.Views>
+</Application>

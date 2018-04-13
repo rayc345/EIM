@@ -1,0 +1,101 @@
+// ******************************************************************************
+// * This is an automatically generated file containing the ribbon resource for *
+// * your application.                                                          *
+// ******************************************************************************
+
+#include ".\ids.h"
+
+STRINGTABLE 
+BEGIN
+    IDR_CMD_EXIT_LabelTitle_RESID L"\x9000\x51fa" /* LabelTitle IDR_CMD_EXIT_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_CMD_EXIT_TooltipTitle_RESID L"\x9000\x51fa\x6b64\x7a0b\x5e8f" /* TooltipTitle IDR_CMD_EXIT_TooltipTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_CMD_EXIT_TooltipDescription_RESID L"\x7acb\x523b\x9000\x51fa" /* TooltipDescription IDR_CMD_EXIT_TooltipDescription_RESID: (null) */
+END
+
+IDR_CMD_EXIT_LargeImages_RESID    BITMAP    "res\\ExitL.bmp" /* LargeImages IDR_CMD_EXIT_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    cmdTabStart_LabelTitle_RESID L"\x5f00\x59cb" /* LabelTitle cmdTabStart_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdGroupAuth_LabelTitle_RESID L"\x51ed\x636e" /* LabelTitle cmdGroupAuth_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdGroupLogin_LabelTitle_RESID L"\x767b\x5f55" /* LabelTitle cmdGroupLogin_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdGroupChatList_LabelTitle_RESID L"\x804a\x5929" /* LabelTitle cmdGroupChatList_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_CMD_ID_LabelTitle_RESID L"\x8bbe\x5907ID:" /* LabelTitle IDR_CMD_ID_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_CMD_APIKEY_LabelTitle_RESID L"APIKEY:" /* LabelTitle IDR_CMD_APIKEY_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_CMD_LOGIN_LabelTitle_RESID L"\x767b\x5f55\n" /* LabelTitle IDR_CMD_LOGIN_LabelTitle_RESID: (null) */
+END
+
+IDR_CMD_LOGIN_SmallImages_96__RESID    BITMAP    "res\\Open_Small_96.bmp" /* SmallImages IDR_CMD_LOGIN_SmallImages_96__RESID: (null) */
+IDR_CMD_LOGIN_LargeImages_96__RESID    BITMAP    "res\\Open_Big_96.bmp" /* LargeImages IDR_CMD_LOGIN_LargeImages_96__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDR_CMD_LOGOUT_LabelTitle_RESID L"\x9000\x51fa\n" /* LabelTitle IDR_CMD_LOGOUT_LabelTitle_RESID: (null) */
+END
+
+IDR_CMD_LOGOUT_SmallImages_96__RESID    BITMAP    "res\\Exit_Small_96.bmp" /* SmallImages IDR_CMD_LOGOUT_SmallImages_96__RESID: (null) */
+IDR_CMD_LOGOUT_LargeImages_96__RESID    BITMAP    "res\\Exit_Big_96.bmp" /* LargeImages IDR_CMD_LOGOUT_LargeImages_96__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDR_CMD_SWITCH_LabelTitle_RESID L"\x804a\x5929\x5217\x8868" /* LabelTitle IDR_CMD_SWITCH_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_CMD_SWITCH_TooltipTitle_RESID L"\x5207\x6362\x804a\x5929\x5bf9\x8c61" /* TooltipTitle IDR_CMD_SWITCH_TooltipTitle_RESID: (null) */
+END
+
+IDR_CMD_SWITCH_LargeImages_96__RESID    IMAGE    "res\\send-letter.png" /* LargeImages IDR_CMD_SWITCH_LargeImages_96__RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDR_CMD_CLOSE_LabelTitle_RESID L"\x5173\x95ed\x8be5\x804a\x5929" /* LabelTitle IDR_CMD_CLOSE_LabelTitle_RESID: (null) */
+END
+
+IDR_CMD_CLOSE_LargeImages_RESID    BITMAP    "res\\ExitL.bmp" /* LargeImages IDR_CMD_CLOSE_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDR_CMD_KEY_LabelTitle_RESID L"\x5bc6\x7801:" /* LabelTitle IDR_CMD_KEY_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_CMD_TARGETID_LabelTitle_RESID L"\x5bf9\x65b9ID:" /* LabelTitle IDR_CMD_TARGETID_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_CMD_SEND_LabelTitle_RESID L"\x53d1\x9001\x6d88\x606f" /* LabelTitle IDR_CMD_SEND_LabelTitle_RESID: (null) */
+END
+
+IDR_CMD_SEND_LargeImages_96__RESID    IMAGE    "res\\send-letter.png" /* LargeImages IDR_CMD_SEND_LargeImages_96__RESID: (null) */
+APPLICATION_RIBBON    UIFILE    "D:\\EncrypedIM\\EncrypedIM\\res\\EIM.bml"
